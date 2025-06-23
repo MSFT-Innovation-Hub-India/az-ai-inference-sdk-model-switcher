@@ -74,25 +74,13 @@ pip install -r requirements.txt
 
 ### 2. Configure Environment Variables
 
-Create a `.env` file in the project root with the following variables:
+Copy the example environment file and configure it with your Azure resources:
 
-```env
-# Azure AI Foundry Endpoint
-endpoint=https://your-ai-foundry-endpoint.inference.ai.azure.com
-
-# Model Names (deployed in Azure AI Foundry)
-grok_model=grok-3-mini
-deep_seek_model=DeepSeek-R1
-
-# Azure AI Search Configuration
-ai_search_url=https://your-search-service.search.windows.net
-ai_index_name=your-index-name
-ai_semantic_config=default
-
-# Optional: API Keys (if not using DefaultAzureCredential)
-# api_key=your-api-key
-# ai_search_key=your-search-key
+```bash
+cp .env.example .env
 ```
+
+Then edit the `.env` file with your actual Azure resource details. The `.env.example` file contains all the required variables with placeholder values and detailed comments.
 
 ### 3. Azure RBAC Configuration
 
