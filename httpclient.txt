@@ -1,0 +1,15 @@
+curl -X POST "https://agent-ai-serviceslyhl.services.ai.azure.com/models/chat/completions?api-version=2024-05-01-preview" \
+    -H "Content-Type: application/json" \
+    -H "Authorization: Bearer xxxxxxxxxxxxxxxxxxxxx-apikey-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" \
+    -d '{
+        "messages": [
+            {
+                "role": "user",
+                "content": "I am going to Paris, what should I see?"
+            }
+        ],
+        "max_completion_tokens": 16000,
+        "temperature": 1,
+        "top_p": 1,
+        "model": "grok-3-mini"
+    }'
